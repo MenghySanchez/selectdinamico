@@ -38,6 +38,6 @@ function showInfo() {
 
     // Mostrar la sección correspondiente si existe
     if (infoDiv) {
-        infoDiv.style.display = "block";
+        infoDiv.style.display = "flex";
     }
 }

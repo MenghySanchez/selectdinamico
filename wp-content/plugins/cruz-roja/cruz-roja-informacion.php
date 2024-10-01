@@ -68,7 +68,7 @@ function cruz_roja_shortcode() {
     <!-- Coloca aquí el contenido HTML que tenías en tu archivo original -->
     <!-- Ejemplo: -->
     <section id="info-sierra">
-        <div id="info-sierra-bolivar" class="info"></div>
+        <div id="info-sierra-bolivar" class="info">
         <section class="tituloProvincial">
             <h2>Junta Provincial de Bolivar</h2>
         </section>
@@ -89,7 +89,7 @@ function cruz_roja_shortcode() {
     <!-- Coloca aquí el contenido HTML que tenías en tu archivo original -->
     <!-- Ejemplo: -->
     <section id="info-sierra">
-        <div id="info-sierra-cañar" class="info"></div>
+        <div id="info-sierra-cañar" class="info">
         <section class="tituloProvincial">
             <h2>Junta Provincial de Cañar</h2>
         </section>
@@ -110,7 +110,7 @@ function cruz_roja_shortcode() {
     <!-- Coloca aquí el contenido HTML que tenías en tu archivo original -->
     <!-- Ejemplo: -->
     <section id="info-sierra">
-        <div id="info-sierra-carchi" class="info"></div>
+        <div id="info-sierra-carchi" class="info">
         <section class="tituloProvincial">
             <h2>Junta Provincial de Carchi</h2>
         </section>
@@ -131,7 +131,7 @@ function cruz_roja_shortcode() {
     <!-- Coloca aquí el contenido HTML que tenías en tu archivo original -->
     <!-- Ejemplo: -->
     <section id="info-sierra">
-        <div id="info-sierra-cotopaxi" class="info"></div>
+        <div id="info-sierra-cotopaxi" class="info">
         <section class="tituloProvincial">
             <h2>Junta Provincial de Cotopaxi</h2>
         </section>
@@ -152,7 +152,7 @@ function cruz_roja_shortcode() {
     <!-- Coloca aquí el contenido HTML que tenías en tu archivo original -->
     <!-- Ejemplo: -->
     <section id="info-sierra">
-        <div id="info-sierra-chimborazo" class="info"></div>
+        <div id="info-sierra-chimborazo" class="info">
         <section class="tituloProvincial">
             <h2>Junta Provincial de Chimborazo</h2>
         </section>
@@ -173,7 +173,7 @@ function cruz_roja_shortcode() {
     <!-- Coloca aquí el contenido HTML que tenías en tu archivo original -->
     <!-- Ejemplo: -->
     <section id="info-sierra">
-        <div id="info-sierra-imbabura" class="info"></div>
+        <div id="info-sierra-imbabura" class="info">
         <section class="tituloProvincial">
             <h2>Junta Provincial de Imbabura</h2>
         </section>
@@ -195,7 +195,7 @@ function cruz_roja_shortcode() {
     <!-- Coloca aquí el contenido HTML que tenías en tu archivo original -->
     <!-- Ejemplo: -->
     <section id="info-sierra">
-        <div id="info-sierra-loja" class="info"></div>
+        <div id="info-sierra-loja" class="info">
         <section class="tituloProvincial">
             <h2>Junta Provincial de Loja</h2>
         </section>
@@ -218,7 +218,7 @@ function cruz_roja_shortcode() {
     <!-- Coloca aquí el contenido HTML que tenías en tu archivo original -->
     <!-- Ejemplo: -->
     <section id="info-sierra">
-        <div id="info-sierra-pichincha" class="info"></div>
+        <div id="info-sierra-pichincha" class="info">
         <section class="tituloProvincial">
             <h2>Junta Provincial de Pichincha</h2>
         </section>
@@ -241,7 +241,7 @@ function cruz_roja_shortcode() {
     <!-- Coloca aquí el contenido HTML que tenías en tu archivo original -->
     <!-- Ejemplo: -->
     <section id="info-sierra">
-        <div id="info-sierra-tumgurahua" class="info"></div>
+        <div id="info-sierra-tumgurahua" class="info">
         <section class="tituloProvincial">
             <h2>Junta Provincial de Tungurahua</h2>
         </section>
