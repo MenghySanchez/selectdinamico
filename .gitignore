@@ -2,4 +2,4 @@
 .DS_store
 
 #ignoramos el zip 
-.zip
+*.zip

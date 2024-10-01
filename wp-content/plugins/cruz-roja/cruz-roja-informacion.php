@@ -67,7 +67,7 @@ function cruz_roja_shortcode() {
                         </tr>
                         <tr>
                           <td rowspan="2" valign="middle" align="left">
-                            <img class="iconPhone" src="./assets/icons/phone-solid.svg"/>
+                            <img class="iconPhone" src="<?php echo plugin_dir_url( __FILE__ ) . 'assets/icons/phone-solid.svg'; ?>" alt="Phone Icon"/>
                           </td>
                           <td> <span class="tituloInfo">Teléfono</span></td>
                         </tr>
