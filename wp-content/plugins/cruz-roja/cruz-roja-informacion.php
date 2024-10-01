@@ -55,10 +55,36 @@ function cruz_roja_shortcode() {
                     <iframe src="https://www.google.com/maps/embed?pb=..." allowfullscreen="" loading="lazy"></iframe>
                 </section>
                 <section class="column textInfo">
-                    <p class="tituloInfo"><strong>Correo Electrónico:</strong>voluntariado@cruzrojaazuay.org</p>
-                    <p class="tituloInfo"><strong>Teléfono:</strong> (07) 2889-048</p>
-                    <p class="tituloInfo"><strong>Sitio Web:</strong> <a href="www.cruzrojazuay.org"
-                            target="_blank">www.cruzrojazuay.org</a></p>
+                    <table width="100%">
+                        <tr>
+                          <td rowspan="2" valign="middle" align="left">
+                           
+                            
+                          </td>
+                          <td> <span class="tituloInfo">Correo Electrónico</span></td>
+                        </tr>
+                        <tr>
+                          <td colspan="2">voluntariado@cruzrojaazuay.org</td>
+                        </tr>
+                        <tr>
+                          <td rowspan="2" valign="middle" align="left">
+                            <label for="">icono</label>
+                          </td>
+                          <td> <span class="tituloInfo">Teléfono</span></td>
+                        </tr>
+                        <tr>
+                          <td colspan="2">(07) 2889-048</td>
+                        </tr>
+                        <tr>
+                          <td rowspan="2" valign="middle" align="left">
+                            <label for="">icono</label>
+                          </td>
+                          <td> <span class="tituloInfo">Sitio Web</span></td>                        </tr>
+                        <tr>
+                          <td colspan="2">www.cruzrojazuay.org</td>
+                        </tr>
+                      </table>
+                    <
                 </section>
             </article>
         </div>
@@ -178,7 +204,7 @@ function cruz_roja_shortcode() {
             <h2>Junta Provincial de Imbabura</h2>
         </section>
         <article class="groupInfo">
-            <section class="column">
+            <section class="column-map">
                 <iframe
                     src="https://www.google.com/maps?ll=0.348191,-78.121094&z=16&t=m&hl=es&gl=EC&mapclient=embed&cid=4532845579914894107"
                     allowfullscreen="" loading="lazy"></iframe>

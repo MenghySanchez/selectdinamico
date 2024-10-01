@@ -17,9 +17,15 @@ section#cuerpo {
 section.tituloProvincial {
     display: flex;
     justify-content: center;
+    margin-bottom: 25px;
 }
 .groupInfo {
-    display: flex;
+    display: grid;
+    grid-template-columns: 70% 30%;
+
+}
+.column-map{
+    width: auto;
 }
 .column {
     flex: 1;
