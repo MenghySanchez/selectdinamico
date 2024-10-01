@@ -58,8 +58,7 @@ function cruz_roja_shortcode() {
                     <table width="100%">
                         <tr>
                           <td rowspan="2" valign="middle" align="left">
-                           
-                            
+                            <img class="iconEmail" src="./assets/icons/envelope.svg"/>
                           </td>
                           <td> <span class="tituloInfo">Correo Electrónico</span></td>
                         </tr>
@@ -68,7 +67,7 @@ function cruz_roja_shortcode() {
                         </tr>
                         <tr>
                           <td rowspan="2" valign="middle" align="left">
-                            <label for="">icono</label>
+                            <img class="iconPhone" src="./assets/icons/phone-solid.svg"/>
                           </td>
                           <td> <span class="tituloInfo">Teléfono</span></td>
                         </tr>
@@ -77,7 +76,7 @@ function cruz_roja_shortcode() {
                         </tr>
                         <tr>
                           <td rowspan="2" valign="middle" align="left">
-                            <label for="">icono</label>
+                            <img class="iconWeb" src="./assets/icons/laptop-solid.svg"/>
                           </td>
                           <td> <span class="tituloInfo">Sitio Web</span></td>                        </tr>
                         <tr>
