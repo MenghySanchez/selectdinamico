@@ -1,0 +1,45 @@
+section#cuerpo {
+    text-align: -webkit-center;
+}
+.selectoresRegPro {
+    display: flex;
+    height: 30px;
+    justify-content: center;
+    align-items: center;
+    column-gap: 30px;
+}
+.info {
+    display: none;
+    margin-top: 20px;
+    padding: 15px;
+    background-color: white;
+}
+section.tituloProvincial {
+    display: flex;
+    justify-content: center;
+}
+.groupInfo {
+    display: flex;
+}
+.column {
+    flex: 1;
+    margin-right: 20px;
+}
+.textInfo {
+    text-align: justify;
+    background: #f9f9f9;
+    padding: 10px 30px;
+    border-radius: 10px;
+}
+.column:last-child {
+    margin-right: 0;
+}
+iframe {
+    width: 450px;
+    height: 200px;
+    border: 0;
+}
+section#info-sierra,
+section#info-regioninsular {
+    width: 55%;
+}
