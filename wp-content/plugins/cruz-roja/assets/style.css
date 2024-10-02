@@ -1,4 +1,4 @@
-\\seccion para la modifciacion de las fuentes del plugin
+/* Sección para la modificación de las fuentes del plugin */
 @font-face {
     font-family: 'Montserrat';
     src: url('/assets/fonts/Montserrat-Regular.woff2') format('woff2'),
@@ -13,15 +13,13 @@
 }
 
 h1, h2, h3, p, span {
-    font-family: 'Montserrat', sans-serif;
     font-weight: 700;
 }
 
-\\fin seccion para la modifciacion de las fuentes del plugin
-
+/* Fin sección para la modificación de las fuentes del plugin */
 
 section#cuerpo {
-    text-align: -webkit-center;
+    text-align: center; /* Simplificado */
 }
 
 .selectoresRegPro {
@@ -29,15 +27,16 @@ section#cuerpo {
     height: 30px;
     justify-content: center;
     align-items: center;
-    column-gap: 30px;
+    gap: 30px; /* Cambiado column-gap a gap para más flexibilidad */
 }
 
-.selectoresRegPro div{
-    text-align-last: center;
+.selectoresRegPro div {
+    text-align: center; /* text-align-last simplificado a text-align */
 }
+
 .selectoresRegPro select {
     margin-top: 10px;
-    border-color: #ff0000;
+    border: 1px solid #ff0000;
     height: 30px;
     border-radius: 10px;
     width: 400px;
@@ -48,57 +47,99 @@ section#cuerpo {
     justify-content: center;
 }
 
-
 .info {
     display: none;
     margin-top: 20px;
     padding: 15px;
     background-color: white;
 }
-section.tituloProvincial {
+
+.tituloProvincial {
     display: flex;
     justify-content: center;
-    margin-bottom: 50px;
+    margin: 30px 0 50px; /* Combina márgenes superior e inferior */
 }
-#tituloJunta{
+
+#tituloJunta {
     font-size: 22px;
     font-weight: 800;
 }
-#tituloJunta span{
-color: #ff0000;
+
+#tituloJunta span {
+    color: #ff0000;
 }
+
 .groupInfo {
     display: grid;
     grid-template-columns: 70% 30%;
-
 }
-.column-map{
-    width: auto;
+
+.column-map {
     justify-self: center;
 }
-.mapasIframe{
-    width: 600px;
-    height: 450px;
-    border: 0px;
+
+.mapasIframe {
+    width: 500px;
+    height: 300px;
+    border-radius: 10px;
 }
+
 .column {
     flex: 1;
     margin-right: 20px;
+    display: contents; /* Nota: Puede causar problemas en navegadores más antiguos */
+    white-space: normal; /* Corrección del valor incorrecto */
 }
+#labelTitulo {
+    height: 15px;
+    align-content: center;
+}
+
+.icono-circular {
+    width: 50px;
+    height: 50px;
+    background-color: #d91616;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icono-circular svg {
+    width: 24px;
+    height: 24px;
+    fill: #ff0000;
+}
+
+svg.iconInfo {
+    width: 25px;
+    fill: white;
+}
+
 .textInfo {
     text-align: justify;
     background: #f9f9f9;
     padding: 10px 30px;
     border-radius: 10px;
 }
+
+td#seccInformacion {
+    padding-bottom: 5px;
+}
+
+span.tituloInfo {
+    font-weight: 800;
+    color: #ff0000;
+}
+
+span.informacionInfo {
+    font-size: 14px;
+}
+
 .column:last-child {
     margin-right: 0;
 }
-iframe {
-    width: 450px;
-    height: 200px;
-    border: 0;
-}
+
 section#info-sierra,
 section#info-regioninsular {
     width: 55%;
