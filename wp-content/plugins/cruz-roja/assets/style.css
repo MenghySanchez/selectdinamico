@@ -31,6 +31,24 @@ section#cuerpo {
     align-items: center;
     column-gap: 30px;
 }
+
+.selectoresRegPro div{
+    text-align-last: center;
+}
+.selectoresRegPro select {
+    margin-top: 10px;
+    border-color: #ff0000;
+    height: 30px;
+    border-radius: 10px;
+    width: 400px;
+}
+
+.todoContenido {
+    display: flex;
+    justify-content: center;
+}
+
+
 .info {
     display: none;
     margin-top: 20px;
@@ -40,7 +58,14 @@ section#cuerpo {
 section.tituloProvincial {
     display: flex;
     justify-content: center;
-    margin-bottom: 25px;
+    margin-bottom: 50px;
+}
+#tituloJunta{
+    font-size: 22px;
+    font-weight: 800;
+}
+#tituloJunta span{
+color: #ff0000;
 }
 .groupInfo {
     display: grid;
@@ -49,6 +74,12 @@ section.tituloProvincial {
 }
 .column-map{
     width: auto;
+    justify-self: center;
+}
+.mapasIframe{
+    width: 600px;
+    height: 450px;
+    border: 0px;
 }
 .column {
     flex: 1;
