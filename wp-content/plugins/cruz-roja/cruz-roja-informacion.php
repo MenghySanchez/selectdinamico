@@ -22,10 +22,13 @@ function cruz_roja_shortcode() {
     ob_start();
     ?>
 <section id="cuerpo">
-    <h1>Selecciona una Región y Provincia de Ecuador</h1>
+    <section>
+        <h1>Selecciona una Región y Provincia de Ecuador.</h1>
+    </section>
     <section class="selectoresRegPro">
         <div>
             <label for="region">Región:</label>
+            <br>
             <select id="region" onchange="updateProvincias()">
                 <option value="">--Selecciona una Región--</option>
                 <option value="sierra">Sierra</option>
@@ -36,69 +39,65 @@ function cruz_roja_shortcode() {
         </div>
         <div>
             <label for="provincia">Provincia:</label>
+            <br>
             <select id="provincia" onchange="showInfo()">
                 <option value="">--Selecciona una Provincia--</option>
             </select>
         </div>
     </section>
-
-    <!-- Información de las Provincias -->
-    <!-- Coloca aquí el contenido HTML que tenías en tu archivo original -->
-    <!-- Ejemplo: -->
-    <section id="info-sierra">
-        <div id="info-sierra-azuay" class="info">
-            <section class="tituloProvincial">
-                <h2>Junta Provincial de Azuay</h2>
-            </section>
-            <article class="groupInfo">
-                <section class="column">
-                    <iframe src="https://www.google.com/maps/embed?pb=..." allowfullscreen="" loading="lazy"></iframe>
+   
+    <div class="todoContenido">
+        <section id="info-sierra">
+            <div id="info-sierra-azuay" class="info">
+                <section class="tituloProvincial">
+                    <h2 id="tituloJunta">Junta Provincial de <span>Azuay</span></h2>
                 </section>
-                <section class="column textInfo">
-                    <table width="100%">
-                        <tr>
-                            <td rowspan="2" valign="middle" align="left">
-                                <img class="iconEmail"
-                                    src="<?php echo plugin_dir_url( __FILE__ ) . 'assets/icons/envelope.svg'; ?>"
-                                    alt="Envelope Icon" />
+                <article class="groupInfo">
+                    <section class="column-map">
+                        <iframe class="mapasIframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7969.419835212815!2d-79.01298020642092!3d-2.899679399999992!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91cd1813e387f2b5%3A0x73f36c2ff4052ce1!2sCruz%20Roja%20Ecuatoriana!5e0!3m2!1ses!2sec!4v1727886997001!5m2!1ses!2sec" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>                    </section>
+                    <section class="column textInfo">
+                        <table width="100%">
+                            <tr>
+                                <td rowspan="2" valign="middle" align="left">
+                                    <img class="iconEmail"
+                                        src="<?php echo plugin_dir_url( __FILE__ ) . 'assets/icons/envelope.svg'; ?>"
+                                        alt="Envelope Icon" />
+                                </td>
+                                <td> <span class="tituloInfo">Correo Electrónico</span></td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">voluntariado@cruzrojaazuay.org</td>
+                            </tr>
+                            <tr>
+                                <td rowspan="2" valign="middle" align="left">
+                                    <img class="iconPhone"
+                                        src="<?php echo plugin_dir_url( __FILE__ ) . 'assets/icons/phone-solid.svg'; ?>"
+                                        alt="Phone Icon" />
+                                </td>
+                                <td> <span class="tituloInfo">Teléfono</span></td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">(07) 2889-048</td>
+                            </tr>
+                            <tr>
+                                <td rowspan="2" valign="middle" align="left">
+                                <img class="iconWeb"
+                                    src="<?php echo plugin_dir_url( __FILE__ ) . 'assets/icons/laptop-solid.svg'; ?>"
+                                    alt="Web Icon" />
+                                </td>
+                                <td> <span class="tituloInfo">Sitio Web</span></td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">www.cruzrojazuay.org</td>
+                            </tr>
+                        </table>
+                    </section>
+                </article>
+            </div>
+        </section>
+    </div>
+   
 
-                            </td>
-                            <td> <span class="tituloInfo">Correo Electrónico</span></td>
-                        </tr>
-                        <tr>
-                            <td colspan="2">voluntariado@cruzrojaazuay.org</td>
-                        </tr>
-                        <tr>
-                            <td rowspan="2" valign="middle" align="left">
-                                <img class="iconPhone"
-                                    src="<?php echo plugin_dir_url( __FILE__ ) . 'assets/icons/phone-solid.svg'; ?>"
-                                    alt="Phone Icon" />
-                            </td>
-                            <td> <span class="tituloInfo">Teléfono</span></td>
-                        </tr>
-                        <tr>
-                            <td colspan="2">(07) 2889-048</td>
-                        </tr>
-                        <tr>
-                            <td rowspan="2" valign="middle" align="left">
-                            <img class="iconWeb"
-                                src="<?php echo plugin_dir_url( __FILE__ ) . 'assets/icons/laptop-solid.svg'; ?>"
-                                alt="Web Icon" />
-                            </td>
-                            <td> <span class="tituloInfo">Sitio Web</span></td>
-                        </tr>
-                        <tr>
-                            <td colspan="2">www.cruzrojazuay.org</td>
-                        </tr>
-                    </table>
-                </section>
-            </article>
-        </div>
-    </section>
-
-    <!-- Información de las Provincias -->
-    <!-- Coloca aquí el contenido HTML que tenías en tu archivo original -->
-    <!-- Ejemplo: -->
     <section id="info-sierra">
         <div id="info-sierra-bolivar" class="info">
             <section class="tituloProvincial">
@@ -117,9 +116,7 @@ function cruz_roja_shortcode() {
         </div>
     </section>
 
-    <!-- Información de las Provincias -->
-    <!-- Coloca aquí el contenido HTML que tenías en tu archivo original -->
-    <!-- Ejemplo: -->
+  
     <section id="info-sierra">
         <div id="info-sierra-cañar" class="info">
             <section class="tituloProvincial">
@@ -138,9 +135,6 @@ function cruz_roja_shortcode() {
         </div>
     </section>
 
-    <!-- Información de las Provincias -->
-    <!-- Coloca aquí el contenido HTML que tenías en tu archivo original -->
-    <!-- Ejemplo: -->
     <section id="info-sierra">
         <div id="info-sierra-carchi" class="info">
             <section class="tituloProvincial">
@@ -159,9 +153,7 @@ function cruz_roja_shortcode() {
         </div>
     </section>
 
-    <!-- Información de las Provincias -->
-    <!-- Coloca aquí el contenido HTML que tenías en tu archivo original -->
-    <!-- Ejemplo: -->
+
     <section id="info-sierra">
         <div id="info-sierra-cotopaxi" class="info">
             <section class="tituloProvincial">
@@ -180,9 +172,7 @@ function cruz_roja_shortcode() {
         </div>
     </section>
 
-    <!-- Información de las Provincias -->
-    <!-- Coloca aquí el contenido HTML que tenías en tu archivo original -->
-    <!-- Ejemplo: -->
+
     <section id="info-sierra">
         <div id="info-sierra-chimborazo" class="info">
             <section class="tituloProvincial">
@@ -201,9 +191,6 @@ function cruz_roja_shortcode() {
         </div>
     </section>
 
-    <!-- Información de las Provincias -->
-    <!-- Coloca aquí el contenido HTML que tenías en tu archivo original -->
-    <!-- Ejemplo: -->
     <section id="info-sierra">
         <div id="info-sierra-imbabura" class="info">
             <section class="tituloProvincial">
@@ -223,9 +210,6 @@ function cruz_roja_shortcode() {
         </div>
     </section>
 
-    <!-- Información de las Provincias -->
-    <!-- Coloca aquí el contenido HTML que tenías en tu archivo original -->
-    <!-- Ejemplo: -->
     <section id="info-sierra">
         <div id="info-sierra-loja" class="info">
             <section class="tituloProvincial">
@@ -246,9 +230,6 @@ function cruz_roja_shortcode() {
         </div>
     </section>
 
-    <!-- Información de las Provincias -->
-    <!-- Coloca aquí el contenido HTML que tenías en tu archivo original -->
-    <!-- Ejemplo: -->
     <section id="info-sierra">
         <div id="info-sierra-pichincha" class="info">
             <section class="tituloProvincial">
@@ -269,9 +250,6 @@ function cruz_roja_shortcode() {
         </div>
     </section>
 
-    <!-- Información de las Provincias -->
-    <!-- Coloca aquí el contenido HTML que tenías en tu archivo original -->
-    <!-- Ejemplo: -->
     <section id="info-sierra">
         <div id="info-sierra-tumgurahua" class="info">
             <section class="tituloProvincial">
@@ -292,7 +270,6 @@ function cruz_roja_shortcode() {
             </article>
         </div>
     </section>
-    <!-- Añade el resto de las secciones correspondientes -->
 </section>
 <?php
     return ob_get_clean();
