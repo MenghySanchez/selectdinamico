@@ -1,6 +1,29 @@
+\\seccion para la modifciacion de las fuentes del plugin
+@font-face {
+    font-family: 'Montserrat';
+    src: url('/assets/fonts/Montserrat-Regular.woff2') format('woff2'),
+         url('/assets/fonts/Montserrat-Regular.woff') format('woff'),
+         url('/assets/fonts/Montserrat-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1, h2, h3, p, span {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+
+\\fin seccion para la modifciacion de las fuentes del plugin
+
+
 section#cuerpo {
     text-align: -webkit-center;
 }
+
 .selectoresRegPro {
     display: flex;
     height: 30px;
