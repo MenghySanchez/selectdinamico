@@ -20,24 +20,25 @@ function updateProvincias() {
         });
     }
 
-    // Ocultar todas las secciones de información
     document.querySelectorAll(".info").forEach(function (div) {
         div.style.display = "none";
     });
 }
 
 function showInfo() {
+    
     const region = document.getElementById("region").value;
     const provincia = document.getElementById("provincia").value;
     const infoDiv = document.getElementById(`info-${region}-${provincia}`);
 
-    // Ocultar todas las secciones de información
     document.querySelectorAll(".info").forEach(function (div) {
         div.style.display = "none";
     });
 
-    // Mostrar la sección correspondiente si existe
+
     if (infoDiv) {
-        infoDiv.style.display = "flex";
+        infoDiv.style.display = "block";
+        
+        
     }
 }
