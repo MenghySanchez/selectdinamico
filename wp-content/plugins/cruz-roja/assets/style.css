@@ -1,9 +1,9 @@
 /* Sección para la modificación de las fuentes del plugin */
 @font-face {
     font-family: 'Montserrat';
-    src: url('/assets/fonts/Montserrat-Regular.woff2') format('woff2'),
-         url('/assets/fonts/Montserrat-Regular.woff') format('woff'),
-         url('/assets/fonts/Montserrat-Regular.ttf') format('truetype');
+    src: url('./fonts/Montserrat-Regular.woff2') format('woff2'),
+         url('./fonts/Montserrat-Regular.woff') format('woff'),
+         url('./fonts/Montserrat-Regular.ttf') format('truetype');
     font-weight: 400;
     font-style: normal;
 }
@@ -24,7 +24,7 @@ section#cuerpo {
 
 .selectoresRegPro {
     display: flex;
-    height: 30px;
+    height: 50px;
     justify-content: center;
     align-items: center;
     gap: 30px; /* Cambiado column-gap a gap para más flexibilidad */
@@ -94,6 +94,17 @@ section#cuerpo {
     height: 15px;
     align-content: center;
 }
+.tableStyle{
+    background-color: #f9f9f9;
+    width: 300px;
+   margin-top: 8%;
+   margin-bottom: 8%;
+    
+}
+.informacionInfo a{
+    color: black;
+    text-decoration: none;
+}
 
 .icono-circular {
     width: 50px;
@@ -143,4 +154,40 @@ span.informacionInfo {
 section#info-sierra,
 section#info-regioninsular {
     width: 55%;
+}
+
+@media screen and (min-width: 600px) and (max-width: 1100px) {
+    .selectoresRegPro {
+        display: contents;
+        margin-bottom: 5%;
+    }
+    .selectoresRegPro select {
+        width: 330px;
+    }
+    .selectoresRegPro div {
+       
+        margin-top: 20px;
+    }
+    .tituloProvincial{
+        width: 100%;
+    }
+    .info{
+        width: auto;
+    }
+    .groupInfo{
+        display: contents;
+    }
+    .mapasIframe {
+        width: 300px;
+        height: 300px;
+        border-radius: 10px;
+    }
+}
+
+@media screen and (min-width: 200px) and (max-width: 600px) {
+    .mapasIframe {
+        width: 200px;
+        height: 300px;
+        border-radius: 10px;
+    }
 }
